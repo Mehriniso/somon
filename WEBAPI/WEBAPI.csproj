@@ -168,6 +168,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906181819488_InitialCreate.cs" />
+    <Compile Include="Migrations\201906181819488_InitialCreate.Designer.cs">
+      <DependentUpon>201906181819488_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907032326209_Initial.cs" />
+    <Compile Include="Migrations\201907032326209_Initial.Designer.cs">
+      <DependentUpon>201907032326209_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SOMONContext.cs" />
   </ItemGroup>
@@ -260,6 +269,14 @@
       <Project>{e66a1fcc-82ed-4d52-8a11-7917ea672dca}</Project>
       <Name>SOMON.DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201906181819488_InitialCreate.resx">
+      <DependentUpon>201906181819488_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907032326209_Initial.resx">
+      <DependentUpon>201907032326209_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
